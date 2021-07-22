@@ -3,8 +3,10 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    background: aqua;
 }
 
 span {
     font-size: 3rem;
+    margin: 0 25px;
 }
