@@ -1,0 +1,15 @@
+.nav-container {
+    display: flex;
+}
+
+nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    height: 45px;
+    background: aqua;
+    border-radius: 20px;
+    margin: 15px;
+    padding: 5px 15px;
+}
