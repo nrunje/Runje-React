@@ -1,13 +1,16 @@
 import './App.css';
 import NavBar from "./NavBar";
+import Welcome from "./Welcome";
+import Footer from "./Footer";
 
 function App() {
   return (
     <div className="App">
       <div className="app-container">
         <NavBar />
-        <h2>Test content</h2>
+        <Welcome />
       </div>
+      {/* <Footer /> */}
     </div>
   );
 }

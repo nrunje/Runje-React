@@ -1,0 +1,10 @@
+.welcome-sign {
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+span {
+    font-size: 3rem;
+}
