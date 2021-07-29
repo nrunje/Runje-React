@@ -24,7 +24,7 @@ function Content(props) {
 
   if (OnEntryPage) {
     return (
-      <div>
+      <div className="content-entry-page">
         <Welcome />
         <button id="entry-button" onClick={() => setOnEntryPage(!OnEntryPage)}>Click to enter</button>
       </div>

@@ -22,9 +22,14 @@ body {
   flex-direction: column;
 }
 
-h2 {
-  height: 500px;
-  background-color: red;
+.content-entry-page {
+  display: flex;
+  flex-direction: column;
+  /* height: 100%; */
+  margin: auto;
+  width: 100%;
+  /* background-color: aqua; */
+  margin-top: 15%;
 }
 
 #entry-button {
@@ -33,5 +38,6 @@ h2 {
   /* width: fit-content; */
   margin: auto;
   border-radius: 15px;
-
+  background-color: rgb(46, 46, 230);
+  color: white;
 }
