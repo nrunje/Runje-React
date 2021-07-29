@@ -1,17 +1,35 @@
+import { useState } from "react";
 import './App.css';
 import NavBar from "./NavBar";
+import LandingPage from "./LandingPage";
 import Welcome from "./Welcome";
-// import Footer from "./Footer";
 
-function App() {
+export default function App() {
   return (
     <div className="App">
       <div className="app-container">
         <NavBar />
-        <Welcome />
+        {/* {OnEntryPage && <Welcome />}
+        {OnEntryPage && <button id="entry-button" onClick={() => setOnEntryPage(!OnEntryPage)}>
+          Click to enter
+        </button>} */}
+        <Content />
       </div>
     </div>
   );
 }
 
-export default App;
+function Content(props) {
+  const [OnEntryPage, setOnEntryPage] = useState(true);
+
+  if (OnEntryPage) {
+    return (
+      <div>
+        <Welcome />
+        <button id="entry-button" onClick={() => setOnEntryPage(!OnEntryPage)}>Click to enter</button>
+      </div>
+    );
+  } else {
+    return <h3>Content should be here</h3>;
+  }
+}

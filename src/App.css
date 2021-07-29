@@ -26,3 +26,12 @@ h2 {
   height: 500px;
   background-color: red;
 }
+
+#entry-button {
+  font-size: medium;
+  padding: 30px;
+  /* width: fit-content; */
+  margin: auto;
+  border-radius: 15px;
+
+}
