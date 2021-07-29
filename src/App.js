@@ -9,10 +9,6 @@ export default function App() {
     <div className="App">
       <div className="app-container">
         <NavBar />
-        {/* {OnEntryPage && <Welcome />}
-        {OnEntryPage && <button id="entry-button" onClick={() => setOnEntryPage(!OnEntryPage)}>
-          Click to enter
-        </button>} */}
         <Content />
       </div>
     </div>
