@@ -1,31 +1,42 @@
 import { useState } from "react";
 import './App.css';
 import NavBar from "./NavBar";
-import LandingPage from "./LandingPage";
-import Welcome from "./Welcome";
+import React from "react";
+import BlueOcean from "./blue-ocean-compressed.jpg";
 
-export default function App() {
-  return (
-    <div className="App">
-      <div className="app-container">
-        <NavBar />
-        <Content />
-      </div>
-    </div>
-  );
-}
+export default class App extends React.Component {
+  constructor(props) {
+    super(props);
 
-function Content(props) {
-  const [OnEntryPage, setOnEntryPage] = useState(true);
-
-  if (OnEntryPage) {
-    return (
-      <div className="content-entry-page">
-        <Welcome />
-        <button id="entry-button" onClick={() => setOnEntryPage(!OnEntryPage)}>Click to enter</button>
-      </div>
-    );
-  } else {
-    return <h3>Content should be here</h3>;
+    this.state = {
+      onPage: "landing-page", 
+      date: new Date()
+    }
   }
-}
+
+  render() {
+    if (this.state.onPage === "landing-page") {
+      return (
+        <div className="site-landing">
+          <div className="site-title">
+            <h1>Runje.org</h1>
+          </div>
+
+            <div className="site-landing-bottom">
+              <div className="site-items-container">
+                <h2>Items container</h2>
+              </div>
+
+              <footer>
+                Designed in {this.state.date.getUTCFullYear()} with React.
+              </footer>
+            </div>
+        </div>
+      );
+    }
+    }
+  }
+
+
+
+
