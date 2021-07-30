@@ -33,7 +33,7 @@ export default class App extends React.Component {
               <div className="site-items-container">
                 {/* <h2>Items container</h2> */}
                 <ContentItem content="CS Projects" image={Person}/>
-                {/* <ContentItem content="About Me" image={Person}/> */}
+                <ContentItem content="About Me" image={Person}/>
                 {/* <ContentItem content="Essays and Writings" image={Person} /> */}
               </div>
 

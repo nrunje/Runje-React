@@ -9,22 +9,31 @@
     height: var(--main--container--height);
     width: var(--main--container-width);
     /* background: aqua; */
+    cursor: pointer;
+    margin: 0 25px;
 }
 
 .content-item > img {
     height: 465px;
     width: var(--main--container-width);
     object-fit: cover;
-    /* border-radius: 50%; */
     border-top-left-radius: var(--border-curve);
     border-top-right-radius: var(--border-curve);
 }
 
-.content-item-text {
+.content-item-text-container {
     color: white;
     background: var(--card-color);
     height: calc(600px - 465px);
+    width: var(--main--container-width);
     margin-top: -5px;
     border-bottom-left-radius: var(--border-curve);
     border-bottom-right-radius: var(--border-curve);
+}
+
+.content-item-text-content {
+    /* background: aqua; */
+    padding-left: 10px;
+    padding-top: 10px;
+    
 }
