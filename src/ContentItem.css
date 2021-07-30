@@ -1,0 +1,30 @@
+:root {
+    --main--container--height: 600px;
+    --main--container-width: 465px;
+    --border-curve: 20px;
+    --card-color: #4f52df;
+}
+
+.content-item {
+    height: var(--main--container--height);
+    width: var(--main--container-width);
+    /* background: aqua; */
+}
+
+.content-item > img {
+    height: 465px;
+    width: var(--main--container-width);
+    object-fit: cover;
+    /* border-radius: 50%; */
+    border-top-left-radius: var(--border-curve);
+    border-top-right-radius: var(--border-curve);
+}
+
+.content-item-text {
+    color: white;
+    background: var(--card-color);
+    height: calc(600px - 465px);
+    margin-top: -5px;
+    border-bottom-left-radius: var(--border-curve);
+    border-bottom-right-radius: var(--border-curve);
+}

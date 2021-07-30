@@ -4,7 +4,6 @@
 }
 
 body {
-  background-color: red;
   height: 100vh;
   width: 100vw;
   background: url("./blue-ocean-compressed.jpg");
@@ -24,11 +23,12 @@ body {
   display: flex;
   height: 50px;
   justify-content: flex-start;
+  align-items: center;
   margin-left: 10px;
 }
 
 .site-landing-bottom {
-  background: aqua;
+  /* background: aqua; */
   max-width: 1800px;
   margin: 0 auto;
   display: flex;
@@ -41,12 +41,16 @@ body {
   background: blue;
   width: 100%;
   flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 footer {
   color: white;
   height: 50px;
-  background: red;
+  /* background: red; */
   display: flex;
   justify-content: center;
   align-items: flex-end;
