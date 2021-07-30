@@ -43,7 +43,7 @@ body {
 }
 
 .site-items-container {
-  background: blue;
+  /* background: blue; */
   width: 100%;
   flex: 1;
   display: flex;

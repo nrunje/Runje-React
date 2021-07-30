@@ -4,6 +4,8 @@ import NavBar from "./NavBar";
 import React from "react";
 import ContentItem from "./ContentItem";
 import Person from "./person.jpg";
+import Computer from "./computer.jpg";
+import FountainPen from "./fountain-pen.jpg";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -14,12 +16,12 @@ export default class App extends React.Component {
       date: new Date()
     }
 
-    // this.handleClick = this.handleClick.bind(this);
+    this.handleClick = this.handleClick.bind(this);
   }
 
-  // handleClick() {
-  //   this.setState({onPage: "test-page"});
-  // }
+  handleClick() {
+    this.setState({onPage: "test-page"});
+  }
 
   render() {
     if (this.state.onPage === "landing-page") {
@@ -31,10 +33,16 @@ export default class App extends React.Component {
 
             <div className="site-landing-bottom">
               <div className="site-items-container">
-                {/* <h2>Items container</h2> */}
-                <ContentItem content="CS Projects" image={Person}/>
+                <div onClick={this.handleClick}>
+                <ContentItem content="CS Projects" image={Computer}/>
+
+                </div>
+
                 <ContentItem content="About Me" image={Person}/>
-                {/* <ContentItem content="Essays and Writings" image={Person} /> */}
+
+                <ContentItem content="Essays and Writings" image={FountainPen} />
+
+                <button onClick={this.handleClick}>click here to change state</button>
               </div>
 
               <footer>
