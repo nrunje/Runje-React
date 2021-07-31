@@ -10,10 +10,12 @@ import Writing from "./Writing";
   export default function App() {
     return (
       <BrowserRouter>
-          <Route path="/" exact component={Home} />
+        <Switch>
           <Route path="/projects" exact component={Projects} />
           <Route path="/about" exact component={About} />
           <Route path="/writing" exact component={Writing} />
+          <Route path="/" component={Home} />
+        </Switch>
       </BrowserRouter>
     );
   }
