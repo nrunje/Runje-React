@@ -25,15 +25,15 @@ export default class App extends React.Component {
 
             <div className="site-landing-bottom">
               <div className="site-items-container">
-                <Link to="/projects">
+                <Link style={{ textDecoration: 'none' }} to="/projects">
                 <ContentItem content="CS Projects" image={Computer}/>
                 </Link>
                 
-                <Link to="/about">
+                <Link style={{ textDecoration: 'none' }} to="/about">
                 <ContentItem content="About Me" image={Person}/>
                 </Link>
 
-                <Link to="/writing">
+                <Link style={{ textDecoration: 'none' }} to="/writing">
                 <ContentItem content="Essays and Writings" image={FountainPen} />
                 </Link>
               </div>

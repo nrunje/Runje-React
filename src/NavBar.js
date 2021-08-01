@@ -3,20 +3,28 @@ import "./NavBar.css";
 import MenuIcon from "@material-ui/icons/Menu";
 import { IconButton } from "@material-ui/core";
 import BrightnessMediumIcon from '@material-ui/icons/BrightnessMedium';
+import { Link } from "react-router-dom";
 
-export default function NavBar() {
+function NavBar() {
     return (
-        <div className="nav-container">
-            <nav>
-                <IconButton>
-                <MenuIcon />
-                </IconButton>
-                <h1>Runje.org</h1>
-                <IconButton>
-                <BrightnessMediumIcon />
-                </IconButton>
-            </nav>
+        <div className="navbar-segment">
+            <div className="navbar-container">
+                <div className="navbar-content">
+                    <IconButton>
+                    <MenuIcon />
+                    </IconButton>
 
+                    <Link style={{ textDecoration: 'none' }} to="/">
+                    <h1>Runje</h1>
+                    </Link>
+
+                    <IconButton>
+                    <BrightnessMediumIcon />
+                    </IconButton>
+                </div>
+            </div>
         </div>
     );
 }
+
+export default NavBar;

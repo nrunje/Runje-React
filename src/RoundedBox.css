@@ -1,0 +1,14 @@
+:root {
+    --rounded-box-height: calc(100vh - 100px);
+    --rounded-corners-value: 25px;
+    --box-color: #dddddd;
+}
+
+.rounded-box {
+    max-width: 1500px;
+    height: var(--rounded-box-height);
+    background: red;
+    margin: 0 auto;
+    border-radius: var(--rounded-corners-value);
+    background: var(--box-color);
+}
