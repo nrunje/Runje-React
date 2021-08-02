@@ -14,7 +14,7 @@ function NavBar() {
                     <MenuIcon />
                     </IconButton>
 
-                    <Link style={{ textDecoration: 'none' }} to="/">
+                    <Link className="navbar-title-name" style={{ textDecoration: 'none', color: "black" }} to="/">
                     <h1>Runje</h1>
                     </Link>
 

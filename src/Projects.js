@@ -9,8 +9,8 @@ export default class Projects extends React.Component {
             <div className="projects-page">
                 <NavBar />
 
-                <RoundedBox>
-                    <p>Test info</p>
+                <RoundedBox pagetitle="Personal CS Projects">
+
                 </RoundedBox>
             </div>
         );

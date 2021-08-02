@@ -5,6 +5,9 @@ import "./RoundedBox.css";
 function RoundedBox(props) {
     return (
         <div className="rounded-box">
+            <div className="content-title">
+                {props.pagetitle}
+            </div>
             {props.children}
         </div>
     );

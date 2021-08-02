@@ -1,7 +1,7 @@
 :root {
     --rounded-box-height: calc(100vh - 100px);
     --rounded-corners-value: 25px;
-    --box-color: #dddddd;
+    --box-color: #f2f2f2;
 }
 
 .rounded-box {
@@ -11,4 +11,16 @@
     margin: 0 auto;
     border-radius: var(--rounded-corners-value);
     background: var(--box-color);
+    opacity: 90%;
+}
+
+.content-title {
+    /* background: red; */
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    font-size: 40px;
+    margin-left: 25px;
+    margin-right: 25px;
+    /* margin-top: 25px; */
 }
