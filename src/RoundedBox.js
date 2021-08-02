@@ -8,7 +8,10 @@ function RoundedBox(props) {
             <div className="content-title">
                 {props.pagetitle}
             </div>
+
+            <div className="content-boxes-container">
             {props.children}
+            </div>
         </div>
     );
 }

@@ -7,11 +7,12 @@
 .rounded-box {
     max-width: 1500px;
     height: var(--rounded-box-height);
-    background: red;
     margin: 0 auto;
     border-radius: var(--rounded-corners-value);
     background: var(--box-color);
     opacity: 90%;
+    display: flex;
+    flex-direction: column;
 }
 
 .content-title {
@@ -23,4 +24,12 @@
     margin-left: 25px;
     margin-right: 25px;
     /* margin-top: 25px; */
+}
+
+.content-boxes-container {
+    /* background: aqua; */
+    flex: 1;
+    margin-bottom: 22px;
+    margin-top: 5px;
+    overflow-y: auto;
 }
