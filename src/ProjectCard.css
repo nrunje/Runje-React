@@ -6,13 +6,15 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    background: red;
+    /* background: red; */
 }
 
 .project-card-image-container {
-    background: aqua;
+    /* background: aqua; */
     flex: .35;
     height: 300px;
+    display: flex;
+    justify-content: center;
 }
 
 .project-card-image-container > img {
@@ -22,17 +24,19 @@
 }
 
 .project-card-text-container {
-    background: orange;
+    /* background: orange; */
     flex: .65;
     min-height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 15px;
+    margin-right: 15px;
 }
 
 .project-card-text {
-    background: aqua;
+    /* background: aqua; */
     height: 185px;
     max-width: 640px;
-    min-width: 350px;
+    min-width: 550px;
 }
