@@ -6,36 +6,33 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    background: red;
 }
 
 .project-card-image-container {
-    width: 350px;
-    height: 100%;
-    /* background: aqua; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background: aqua;
+    flex: .35;
+    height: 300px;
 }
 
 .project-card-image-container > img {
-    width: 320px;
-    height: 270px;
+    width: 352px;
+    height: 300px;
     object-fit: cover;
 }
 
-
-
 .project-card-text-container {
+    background: orange;
+    flex: .65;
+    min-height: 300px;
     display: flex;
-    height: 300px; 
-    width: 700px;
     justify-content: center;
     align-items: center;
-    /* background: red; */
 }
 
 .project-card-text {
-    width: 600px;
-    height: 200px;
-    /* background: orange; */
+    background: aqua;
+    height: 185px;
+    max-width: 640px;
+    min-width: 350px;
 }

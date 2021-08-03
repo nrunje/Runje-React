@@ -11,7 +11,7 @@ export function ProjectCard(props) {
             <div className="project-card-text-container">
                 <div className="project-card-text">
                     <h2>Sorting Algos Visualizer</h2>
-                    <p>Lorem ipusum dolor....</p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.
                 </div>
             </div>
         </div>
