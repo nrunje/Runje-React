@@ -7,6 +7,12 @@
     justify-content: center;
     align-items: center;
     /* background: red; */
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.project-card:hover {
+    background: #e6e6e6;
 }
 
 .project-card-image-container {
@@ -26,7 +32,7 @@
 .project-card-text-container {
     /* background: orange; */
     flex: .65;
-    min-height: 300px;
+    /* min-height: 300px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -36,7 +42,16 @@
 
 .project-card-text {
     /* background: aqua; */
-    height: 185px;
+    height: fit-content;
     max-width: 640px;
     min-width: 550px;
+    margin-top: 5px;
+}
+
+.project-card-text > h2 {
+    font-size: 32px;
+}
+
+.project-card-text > p {
+    font-size: 18px;
 }
