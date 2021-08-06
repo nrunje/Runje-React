@@ -56,7 +56,6 @@ body {
 footer {
   color: white;
   height: var(--footer-height);
-  /* background: red; */
   display: flex;
   justify-content: center;
   align-items: flex-end;

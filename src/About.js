@@ -1,14 +1,26 @@
 import { AddBoxOutlined } from "@material-ui/icons";
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import "./About.css";
 
 function About(props) {
+    const [date] = useState(new Date());
+
     return (
-        <div>
-            <p>ON about page</p>
+        <div className="about-page-landing">
+            <div className="site-title-about">
             <Link to="/">
-                <h1>Go back to home page</h1>
+                <h1>Runje.org</h1>
             </Link>
+            </div>
+
+            <div className="about-content-container">
+                Test
+            </div>
+
+            <footer>
+                Designed in {date.getUTCFullYear()} with React.
+            </footer>
         </div>
     );
 }

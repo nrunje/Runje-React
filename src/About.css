@@ -1,0 +1,32 @@
+:root {
+    --site-title-height: 50px;
+    --footer-height-w-margin: 55px;
+}
+
+.about-page-landing {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+.site-title-about {
+    color: white;
+    width: 100%;
+    height: var(--site-title-height);
+    display: flex;
+    align-items: center;
+    /* background: red; */
+}
+
+.site-title-about h1 {
+    margin-left: 10px;
+    color: white;
+}
+
+.about-content-container {
+    max-width: 1300px;
+    height: calc(100vh - --site-title-height - 50px);
+    height: calc(100vh - var(--site-title-height) - var(--footer-height-w-margin));
+    background: red;
+    margin: 0 auto;
+}
