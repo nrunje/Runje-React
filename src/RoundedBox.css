@@ -20,7 +20,7 @@
     min-height: 75px;
     display: flex;
     align-items: center;
-    font-size: 40px;
+    font-size: 36px;
     margin-left: 25px;
     margin-right: 25px;
     /* margin-top: 25px; */
@@ -30,6 +30,6 @@
     /* background: aqua; */
     flex: 1;
     margin-bottom: 22px;
-    margin-top: 5px;
+    margin-top: -10px;
     overflow-y: auto;
 }
