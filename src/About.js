@@ -3,6 +3,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./About.css";
 import Person from "./person.jpg";
+import { AboutContent } from "./AboutContent";
 
 function About(props) {
     const [date] = useState(new Date());
@@ -23,7 +24,7 @@ function About(props) {
                         </div>
 
                     <div className="about-content-upper-right">
-                        <h1>Upper right</h1>
+                        <AboutContent title="Nicholas J. Runje" />
                     </div>
                     </div>
 
