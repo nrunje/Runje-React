@@ -29,3 +29,7 @@
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
     opacity: 95%;
 }
+
+.navbar-content h1 {
+    color: rgb(43, 43, 43);
+}

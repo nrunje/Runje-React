@@ -4,9 +4,13 @@ import { Link } from "react-router-dom";
 import "./About.css";
 import Person from "./person.jpg";
 import { AboutContent } from "./AboutContent";
+import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
+import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import { IconButton } from "@material-ui/core";
 
 function About(props) {
     const [date] = useState(new Date());
+    const [page, setPage] = useState(0);
 
     return (
         <div className="about-page-landing">
@@ -30,13 +34,19 @@ function About(props) {
 
 
                     <div className="about-content-lower">
-                        Buttons here
+                        <div className="about-content-buttons">
+                        {/* <ArrowBackIcon onClick={() => setPage(page - 1)} /> */}
+
+                        {page > 0 && <ArrowBackIcon onClick={() => setPage(page - 1)} />}
+                        <ArrowForwardIcon onClick={() => setPage(page + 1)} />
+                        </div>
                     </div>
                 </div>
             </div>
 
             <footer>
                 Designed in {date.getUTCFullYear()} with React.
+                On page: {page}
             </footer>
         </div>
     );

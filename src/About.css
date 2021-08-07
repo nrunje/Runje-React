@@ -86,9 +86,16 @@
 }
 
 .about-content-lower {
-    min-height: 100px;
-    background: aqua;
+    min-height: 60px;
+    /* background: aqua; */
+    color: white;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.about-content-buttons {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
 }

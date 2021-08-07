@@ -17,7 +17,6 @@
 @media screen and (max-width: 1200px) {
     .about-content {
         min-width: 650px;
-        background: pink;
     }
 }
 
