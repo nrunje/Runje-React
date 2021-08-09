@@ -60,6 +60,12 @@
     height: 475px;
     object-fit: cover;
     border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: transform .7s ease-in-out;
+}
+
+.about-content-upper-left > img:hover {
+    transform: rotate(-40deg);
 }
 
 @media screen and (max-width: 1024px) {

@@ -8,6 +8,7 @@ import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { IconButton } from "@material-ui/core";
 import AboutData from "./about.json";
+import NickRunje from "./nick-runje.jpg";
 
 function About(props) {
     const [date] = useState(new Date());
@@ -25,7 +26,7 @@ function About(props) {
                 <div className="about-content-container">
                     <div className="about-content-upper">
                         <div className="about-content-upper-left">
-                            <img src={Person} />
+                            <img src={NickRunje} />
                         </div>
 
                     <div className="about-content-upper-right">
