@@ -14,7 +14,7 @@
 }
 
 .content-item > img {
-    height: 465px;
+    height: var(--main--container-width);
     width: var(--main--container-width);
     object-fit: cover;
     border-top-left-radius: var(--border-curve);
@@ -24,7 +24,7 @@
 .content-item-text-container {
     color: white;
     background: var(--card-color);
-    height: calc(600px - 465px);
+    height: calc(var(--main--container--height) - var(--main--container-width));
     width: var(--main--container-width);
     margin-top: -5px;
     border-bottom-left-radius: var(--border-curve);
@@ -36,4 +36,26 @@
     padding-left: 10px;
     padding-top: 10px;
     
+}
+
+@media screen and (max-height: 875px) {
+    .content-item {
+        width: 360px;
+        height: fit-content;
+    }
+
+    .content-item > img {
+        width: 360px;
+        height: 360px;
+    }
+
+    .content-item-text-container {
+        width: 360px;
+        height: auto;
+    }
+
+    .content-item-text-content {
+        padding: 10px;
+        padding-bottom: 15px;
+    }
 }

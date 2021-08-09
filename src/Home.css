@@ -31,6 +31,7 @@ body {
   justify-content: flex-start;
   align-items: center;
   margin-left: 10px;
+  cursor: pointer;
 }
 
 .site-landing-bottom {
@@ -51,6 +52,14 @@ body {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@media screen and (max-width: 1600px) {
+  .site-items-container {
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    justify-content: start;
+  }
 }
 
 footer {

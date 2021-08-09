@@ -25,7 +25,6 @@
 
 .about-content-total-container {
     max-width: 1300px;
-    height: calc(100vh - --site-title-height - 50px);
     height: calc(100vh - var(--site-title-height) - var(--footer-height-w-margin));
     /* background: red; */
     margin: 0 auto;

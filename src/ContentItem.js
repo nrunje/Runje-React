@@ -8,7 +8,7 @@ function ContentItem(props) {
 
             <div className="content-item-text-container">
                 <div className="content-item-text-content">
-                <h1>{props.content}</h1>
+                <h1>{props.title}</h1>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc neque tortor, suscipit sit amet lorem et, hendrerit iaculis est. In finibus commodo ipsum, at efficitur. </p>
                 </div>
             </div>

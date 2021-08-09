@@ -13,8 +13,6 @@ function About(props) {
     const [date] = useState(new Date());
     const [page, setPage] = useState(0);
 
-    console.log(AboutData.length);
-
     return (
         <div className="about-page-landing">
             <div className="site-title-about">
@@ -31,7 +29,6 @@ function About(props) {
                         </div>
 
                     <div className="about-content-upper-right">
-                        {/* <AboutContent title="Nicholas J. Runje" /> */}
                         <AboutContent id={AboutData[page].id} title={AboutData[page].title}>
                             {AboutData[page].description}
                         </AboutContent>
@@ -43,7 +40,6 @@ function About(props) {
                         <div className="about-content-buttons">
                             {page > 0 && <ArrowBackIcon onClick={() => setPage(page - 1)} />}
                             {page < AboutData.length  - 1 && <ArrowForwardIcon onClick={() => setPage(page + 1)} />}
-                            {/* <ArrowForwardIcon onClick={() => setPage(page + 1)} /> */}
                         </div>
                     </div>
                 </div>
@@ -51,7 +47,6 @@ function About(props) {
 
             <footer>
                 Designed in {date.getUTCFullYear()} with React.
-                On page: {page}
             </footer>
         </div>
     );
