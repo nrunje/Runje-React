@@ -7,10 +7,13 @@ import { AboutContent } from "./AboutContent";
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { IconButton } from "@material-ui/core";
+import AboutData from "./about.json";
 
 function About(props) {
     const [date] = useState(new Date());
     const [page, setPage] = useState(0);
+
+    console.log(AboutData.length);
 
     return (
         <div className="about-page-landing">
@@ -28,17 +31,19 @@ function About(props) {
                         </div>
 
                     <div className="about-content-upper-right">
-                        <AboutContent title="Nicholas J. Runje" />
+                        {/* <AboutContent title="Nicholas J. Runje" /> */}
+                        <AboutContent id={AboutData[page].id} title={AboutData[page].title}>
+                            {AboutData[page].description}
+                        </AboutContent>
                     </div>
                     </div>
 
 
                     <div className="about-content-lower">
                         <div className="about-content-buttons">
-                        {/* <ArrowBackIcon onClick={() => setPage(page - 1)} /> */}
-
-                        {page > 0 && <ArrowBackIcon onClick={() => setPage(page - 1)} />}
-                        <ArrowForwardIcon onClick={() => setPage(page + 1)} />
+                            {page > 0 && <ArrowBackIcon onClick={() => setPage(page - 1)} />}
+                            {page < AboutData.length  - 1 && <ArrowForwardIcon onClick={() => setPage(page + 1)} />}
+                            {/* <ArrowForwardIcon onClick={() => setPage(page + 1)} /> */}
                         </div>
                     </div>
                 </div>
