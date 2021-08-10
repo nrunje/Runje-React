@@ -1,0 +1,106 @@
+:root {
+    --site-title-height: 50px;
+    --footer-height-w-margin: 55px;
+}
+
+.about-page-landing {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+.site-title-about {
+    color: white;
+    width: 100%;
+    height: var(--site-title-height);
+    display: flex;
+    align-items: center;
+    /* background: red; */
+}
+
+.site-title-about h1 {
+    margin-left: 10px;
+    color: white;
+}
+
+.about-content-total-container {
+    max-width: 1300px;
+    height: calc(100vh - var(--site-title-height) - var(--footer-height-w-margin));
+    /* background: red; */
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+}
+
+.about-content-container {
+    width: 100%;
+    /* background: blue; */
+    padding: 10px;
+}
+
+.about-content-upper {
+    min-height: 375px;
+    /* background: orange; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.about-content-upper-left {
+    flex: .4;
+    /* background: chartreuse; */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.about-content-upper-left > img {
+    width: 475px;
+    height: 475px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    transition: transform .7s ease-in-out;
+}
+
+.about-content-upper-left > img:hover {
+    transform: rotate(-40deg);
+}
+
+@media screen and (max-width: 1024px) {
+    .about-content-upper-left > img {
+        width: 350px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .about-content-upper-left > img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.about-content-upper-right {
+    flex: .6;
+    /* background: purple; */
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.about-content-lower {
+    min-height: 60px;
+    /* background: aqua; */
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-content-buttons {
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}

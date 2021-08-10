@@ -1,31 +1,23 @@
-import { useState } from "react";
+import React from "react";
 import './App.css';
-import NavBar from "./NavBar";
-import LandingPage from "./LandingPage";
-import Welcome from "./Welcome";
+import  { IndexRoute, Switch, Route, Link, BrowserRouter as Router, BrowserRouter } from "react-router-dom";
+import Home from "./Home";
+import Projects from "./Projects";
+import About from "./About";
+import Writing from "./Writing";
 
-export default function App() {
-  return (
-    <div className="App">
-      <div className="app-container">
-        <NavBar />
-        <Content />
-      </div>
-    </div>
-  );
-}
 
-function Content(props) {
-  const [OnEntryPage, setOnEntryPage] = useState(true);
-
-  if (OnEntryPage) {
+  export default function App() {
     return (
-      <div className="content-entry-page">
-        <Welcome />
-        <button id="entry-button" onClick={() => setOnEntryPage(!OnEntryPage)}>Click to enter</button>
-      </div>
+      <BrowserRouter>
+        <Switch>
+          <Route path="/projects" exact component={Projects} />
+          <Route path="/about" exact component={About} />
+          <Route path="/writing" exact component={Writing} />
+          <Route path="/" component={Home} />
+        </Switch>
+      </BrowserRouter>
     );
-  } else {
-    return <h3>Content should be here</h3>;
   }
-}
+
+

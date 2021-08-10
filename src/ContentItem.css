@@ -1,0 +1,84 @@
+:root {
+    --main--container--height: 600px;
+    --main--container-width: 465px;
+    --border-curve: 20px;
+    --card-color: #5f8cc7;
+}
+
+.content-item {
+    height: var(--main--container--height);
+    width: var(--main--container-width);
+    /* background: aqua; */
+    cursor: pointer;
+    margin: 0 25px;
+}
+
+.content-item > img {
+    height: var(--main--container-width);
+    width: var(--main--container-width);
+    object-fit: cover;
+    border-top-left-radius: var(--border-curve);
+    border-top-right-radius: var(--border-curve);
+}
+
+.content-item-text-container {
+    color: white;
+    background: var(--card-color);
+    height: calc(var(--main--container--height) - var(--main--container-width));
+    width: var(--main--container-width);
+    margin-top: -5px;
+    border-bottom-left-radius: var(--border-curve);
+    border-bottom-right-radius: var(--border-curve);
+}
+
+.content-item-text-content {
+    /* background: aqua; */
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-right: 10px;
+}
+
+@media screen and (max-height: 875px) {
+    .content-item {
+        width: 360px;
+        height: fit-content;
+    }
+
+    .content-item > img {
+        width: 360px;
+        height: 360px;
+    }
+
+    .content-item-text-container {
+        width: 360px;
+        height: auto;
+    }
+
+    .content-item-text-content {
+        padding: 10px;
+        padding-bottom: 15px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .content-item {
+        width: 90vw;
+        height: fit-content;
+        margin: 0 5vw;
+    }
+
+    .content-item > img {
+        width: 90vw;
+        height: 90vw;
+    }
+
+    .content-item-text-container {
+        width: 90vw;
+        height: auto;
+    }
+
+    .content-item-text-content {
+        padding: 10px;
+        padding-bottom: 15px;
+    }
+}

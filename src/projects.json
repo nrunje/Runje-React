@@ -1,0 +1,23 @@
+[
+    {
+        "id": "0",
+        "title": "Sorting Algos Visualizer",
+        "imageURL": "./computer.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        "link": "https://sorting.runje.org"
+    },
+    {
+        "id": "1",
+        "title": "Runje.org",
+        "imageURL": "./fountain-pen.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        "link": "http://reactjs.org"
+    },
+    {
+        "id": "2",
+        "title": "Froggit",
+        "imageURL": "./computer.jpg",
+        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis.",
+        "link": "http://cornell.edu"
+    }
+]

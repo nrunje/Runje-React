@@ -1,0 +1,17 @@
+[
+    {
+    "id": 0,
+    "title": "Nicholas J. Runje",
+    "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis."
+    },
+    {
+        "id": 1,
+        "title": "Academics",
+        "description": "Attending college in NY"
+    },
+    {
+        "id": 2,
+        "title": "Technical skills",
+        "description": "Great at coding"
+    }
+]
