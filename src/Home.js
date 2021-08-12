@@ -12,7 +12,6 @@ export default class App extends React.Component {
     super(props);
 
     this.state = {
-      onPage: "landing-page", 
       date: new Date()
     }
   }
