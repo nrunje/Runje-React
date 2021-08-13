@@ -9,6 +9,7 @@ import ArrowBackIcon from '@material-ui/icons/ArrowBack';
 import { IconButton } from "@material-ui/core";
 import AboutData from "./about.json";
 import NickRunje from "./nick-runje.jpg";
+import Nav from "./Nav";
 
 function About(props) {
     const [date] = useState(new Date());

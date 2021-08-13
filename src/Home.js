@@ -1,7 +1,7 @@
 import React from "react";
 import './Home.css';
 import { Link } from "react-router-dom";
-import ContentItem from "./ContentItem";
+import ContentItem from "./components/ContentItem";
 import Person from "./person.jpg";
 import Computer from "./computer.jpg";
 import FountainPen from "./fountain-pen.jpg";
@@ -12,7 +12,6 @@ export default class App extends React.Component {
     super(props);
 
     this.state = {
-      onPage: "landing-page", 
       date: new Date()
     }
   }

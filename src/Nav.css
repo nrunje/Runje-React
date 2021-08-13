@@ -1,0 +1,25 @@
+:root {
+    --nav-block-height: 75px;
+}
+
+.nav-block {
+    height: var(--nav-block-height);
+    max-width: 1500px;
+    /* background: red; */
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-content {
+    width: 90%;
+    /* height: 90%; */
+    border-radius: 25px;
+    /* background: aqua; */
+    background: white;
+    padding: 0 10px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
