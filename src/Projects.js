@@ -5,12 +5,12 @@ import Nav from "./Nav";
 import RoundedBox from "./RoundedBox";
 import { ProjectCard } from "./ProjectCard";
 import ProjectsData from "./projects.json";
+import CornerBox from "./CornerBox";
 
 // Temporary images until JSON relative image paths can be fixed
 import CompImage from "./computer.jpg";
 import FountainPen from "./fountain-pen.jpg";
 import BlueOcean from "./blue-ocean-compressed.jpg";
-import CornerBox from "./CornerBox";
 // ====================================
 
 // export default class Projects extends React.Component {
@@ -54,6 +54,13 @@ export default class Projects extends React.Component {
                 <Nav />
                 
                 <CornerBox title="Personal CS Projects">
+                    <ul>
+                    <li>{ProjectsData.map(project => (
+                        <ProjectCard key={project.id} title={project.title} image={images[parseInt(project.id)]}>
+                            {project.description}
+                        </ProjectCard>
+                    ))}</li>
+                    </ul>
                 </CornerBox>
             </div>
         );

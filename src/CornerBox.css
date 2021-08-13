@@ -1,33 +1,27 @@
 :root {
     --corner-box-height: calc(100vh - 100px);
-    --corner-corners-value: 25px;
-    --box-color: #f2f2f2;
+    --corner-box-radius: 25px;
+    --corner-box-color: #f2f2f2;
 }
 
 .corner-box {
     max-width: 1500px;
     height: var(--corner-box-height);
     margin: 0 auto;
-    border-radius: var(--corner-corners-value);
-    background: var(--box-color);
-    opacity: 90%;
+    background: var(--corner-box-color);
     display: flex;
     flex-direction: column;
+    border-radius: var(--corner-box-radius);
 }
 
-.content-title {
-    /* background: red; */
+.corner-box-title {
     min-height: 75px;
     display: flex;
     align-items: center;
     font-size: 36px;
-    margin-left: 25px;
-    margin-right: 25px;
-    /* margin-top: 25px; */
+    margin: 0 25px;
 }
-
-.content-boxes-container {
-    /* background: aqua; */
+.corner-box-content-container {
     flex: 1;
     margin-bottom: 22px;
     margin-top: -10px;

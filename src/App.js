@@ -14,7 +14,7 @@ import Writing from "./Writing";
           {/* <Route path="/projects" exact component={Projects} /> */}
           <Route path="/about" exact component={About} />
           {/* <Route path="/writing" exact component={Writing} /> */}
-          <Route path="/" component={Home} />
+          <Route path="/" component={Projects} />
         </Switch>
       </Router>
     );
