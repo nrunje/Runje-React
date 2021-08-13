@@ -10,6 +10,7 @@ import ProjectsData from "./projects.json";
 import CompImage from "./computer.jpg";
 import FountainPen from "./fountain-pen.jpg";
 import BlueOcean from "./blue-ocean-compressed.jpg";
+import CornerBox from "./CornerBox";
 // ====================================
 
 // export default class Projects extends React.Component {
@@ -52,9 +53,8 @@ export default class Projects extends React.Component {
             <div className="projects-page">
                 <Nav />
                 
-                <RoundedBox>
-
-                </RoundedBox>
+                <CornerBox title="Personal CS Projects">
+                </CornerBox>
             </div>
         );
     }
