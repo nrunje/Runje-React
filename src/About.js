@@ -1,15 +1,11 @@
-import { AddBoxOutlined } from "@material-ui/icons";
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./About.css";
-import Person from "./person.jpg";
 import { AboutContent } from "./AboutContent";
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import { IconButton } from "@material-ui/core";
 import AboutData from "./about.json";
 import NickRunje from "./nick-runje.jpg";
-import Nav from "./Nav";
 
 function About(props) {
     const [date] = useState(new Date());

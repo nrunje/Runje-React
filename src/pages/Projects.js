@@ -1,14 +1,14 @@
 import React from "react";
 import "./Projects.css";
-import Nav from "./Nav";
-import { ProjectCard } from "./ProjectCard";
-import ProjectsData from "./projects.json";
-import CornerBox from "./CornerBox";
+import Nav from "../Nav";
+import { ProjectCard } from "../ProjectCard";
+import ProjectsData from "../projects.json";
+import CornerBox from "../CornerBox";
 
 // Temporary images until JSON relative image paths can be fixed
-import Froggit from "./froggit.png";
-import HomePage from "./homepage.jpg";
-import SortingPic from "./sorting.jpg";
+import Froggit from "../froggit.png";
+import HomePage from "../homepage.jpg";
+import SortingPic from "../sorting.jpg";
 // ====================================
 
 // Temporary way to resolve images due to unknown error linking images in JSON file

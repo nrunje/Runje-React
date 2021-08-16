@@ -1,8 +1,8 @@
 import React from "react";
 import './App.css';
 import  { IndexRoute, Switch, Route, Link, BrowserRouter as Router } from "react-router-dom";
-import Home from "./Home";
-import Projects from "./Projects";
+import Home from "./pages/Home";
+import Projects from "./pages/Projects";
 import About from "./About";
 import Writing from "./Writing";
 import Error404 from "./pages/Error404";
