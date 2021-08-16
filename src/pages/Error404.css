@@ -11,4 +11,5 @@
 .error-page-content {
     height: fit-content;
     width: fit-content;
+    padding: 5px;
 }
