@@ -5,7 +5,7 @@ import Home from "./Home";
 import Projects from "./Projects";
 import About from "./About";
 import Writing from "./Writing";
-import Error404 from "./Error404";
+import Error404 from "./pages/Error404";
 
 
   export default function App() {
