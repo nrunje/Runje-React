@@ -1,16 +1,11 @@
 import React from "react";
 import "./Projects.css";
-// import NavBar from "./NavBar";
 import Nav from "./Nav";
-import RoundedBox from "./RoundedBox";
 import { ProjectCard } from "./ProjectCard";
 import ProjectsData from "./projects.json";
 import CornerBox from "./CornerBox";
 
 // Temporary images until JSON relative image paths can be fixed
-import CompImage from "./computer.jpg";
-import FountainPen from "./fountain-pen.jpg";
-import BlueOcean from "./blue-ocean-compressed.jpg";
 import Froggit from "./froggit.png";
 import HomePage from "./homepage.jpg";
 import SortingPic from "./sorting.jpg";
