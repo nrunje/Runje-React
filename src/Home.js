@@ -37,11 +37,12 @@ export default class App extends React.Component {
                 </ContentItem>
                 </Link>
 
-                <Link style={{ textDecoration: 'none' }} to="/writing">
+                {/* ===== Below is writing section ====== */}
+                {/* <Link style={{ textDecoration: 'none' }} to="/writing">
                 <ContentItem title="Essays and Writings" image={FountainPen}>
                   Where I gather my thoughts on various happenings in the realm of politics, economics, and history. Unorthodox and unfiltered.
                 </ContentItem>
-                </Link>
+                </Link> */}
               </div>
 
               <footer>

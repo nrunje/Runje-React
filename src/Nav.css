@@ -14,12 +14,12 @@
 
 .nav-content {
     width: 90%;
-    /* height: 90%; */
+    height: 48px;
     border-radius: 25px;
     /* background: aqua; */
     background: white;
     padding: 0 10px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     display: flex;
 }

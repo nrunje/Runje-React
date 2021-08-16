@@ -11,41 +11,13 @@ import CornerBox from "./CornerBox";
 import CompImage from "./computer.jpg";
 import FountainPen from "./fountain-pen.jpg";
 import BlueOcean from "./blue-ocean-compressed.jpg";
+import Froggit from "./froggit.png";
+import HomePage from "./homepage.jpg";
+import SortingPic from "./sorting.jpg";
 // ====================================
 
-// export default class Projects extends React.Component {
-//     constructor(props) {
-//         super(props);
-
-//         this.state = {
-//             projects: ProjectsData
-//         }
-//     }
-
-//     render() {
-//         return (
-//             <div className="projects-page">
-//                 <NavBar />
-
-//                 <RoundedBox pagetitle="Personal CS Projects">
-//                     <ul>
-//                     {this.state.projects.map(project => (
-//                         <a href={project.link}>
-//                             <ProjectCard key={project.id} title={project.title} image={images[parseInt(project.id)]}>
-//                                 {project.description}
-//                             </ProjectCard>
-//                         </a>
-//                     ))}
-//                     </ul>
-
-//                 </RoundedBox>
-//             </div>
-//         );
-//     }
-// }
-
-// // Temporary way to resolve images due to unknown error linking images in JSON file
-const images = [CompImage, FountainPen, BlueOcean]
+// Temporary way to resolve images due to unknown error linking images in JSON file
+const images = [SortingPic, HomePage, Froggit]
 
 export default class Projects extends React.Component {
     render() {
@@ -55,11 +27,15 @@ export default class Projects extends React.Component {
                 
                 <CornerBox title="Personal CS Projects">
                     <ul>
-                    <li>{ProjectsData.map(project => (
+                    <li>
+                    {ProjectsData.map(project => (
+                        <a href={project.link}>
                         <ProjectCard key={project.id} title={project.title} image={images[parseInt(project.id)]}>
                             {project.description}
                         </ProjectCard>
-                    ))}</li>
+                        </a>
+                    ))}
+                    </li>
                     </ul>
                 </CornerBox>
             </div>
