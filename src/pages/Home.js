@@ -3,7 +3,7 @@ import './Home.css';
 import { Link } from "react-router-dom";
 import ContentItem from "../components/ContentItem";
 import Computer from "../computer.jpg";
-import NickRunje from "../nick-runje.jpg";
+import NickRunje from "../images/nick-runje.jpg";
 import Header from "../components/Header";
 
 export default class App extends React.Component {
