@@ -12,7 +12,7 @@
 body {
   height: 100vh;
   width: 100vw;
-  background: url("./blue-ocean-compressed.jpg");
+  background: url("../images/blue-ocean-compressed.jpg");
   background-size: cover;
   background-position: bottom;
   display: block;
@@ -22,16 +22,6 @@ body {
   display: block;
   height: 100vh;
   width: 100vw;
-}
-
-.site-title {
-  color: white;
-  display: flex;
-  height: var(--title-height);
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: 10px;
-  cursor: pointer;
 }
 
 .site-landing-bottom {

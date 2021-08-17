@@ -9,20 +9,6 @@
     display: block;
 }
 
-.site-title-about {
-    color: white;
-    width: 100%;
-    height: var(--site-title-height);
-    display: flex;
-    align-items: center;
-    /* background: red; */
-}
-
-.site-title-about h1 {
-    margin-left: 10px;
-    color: white;
-}
-
 .about-content-total-container {
     max-width: 1300px;
     height: calc(100vh - var(--site-title-height) - var(--footer-height-w-margin));

@@ -1,0 +1,16 @@
+.site-title {
+  color: white;
+  display: flex;
+  height: 50px;
+  justify-content: flex-start;
+  align-items: center;
+  margin-left: 10px;
+  cursor: pointer;
+
+}
+
+.site-title h1 {
+    font-size: 32px;
+}
+
+

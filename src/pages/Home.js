@@ -1,11 +1,10 @@
 import React from "react";
 import './Home.css';
 import { Link } from "react-router-dom";
-import ContentItem from "./components/ContentItem";
-import Person from "./person.jpg";
-import Computer from "./computer.jpg";
-import FountainPen from "./fountain-pen.jpg";
-import NickRunje from "./nick-runje.jpg";
+import ContentItem from "../components/ContentItem";
+import Computer from "../computer.jpg";
+import NickRunje from "../images/nick-runje.jpg";
+import Header from "../components/Header";
 
 export default class App extends React.Component {
   constructor(props) {
@@ -19,9 +18,7 @@ export default class App extends React.Component {
   render() {
       return (
         <div className="site-landing">
-          <div className="site-title">
-            <h1>Runje.org</h1>
-          </div>
+          <Header />
 
             <div className="site-landing-bottom">
               <div className="site-items-container">
@@ -37,11 +34,12 @@ export default class App extends React.Component {
                 </ContentItem>
                 </Link>
 
-                <Link style={{ textDecoration: 'none' }} to="/writing">
+                {/* ===== Below is writing section ====== */}
+                {/* <Link style={{ textDecoration: 'none' }} to="/writing">
                 <ContentItem title="Essays and Writings" image={FountainPen}>
                   Where I gather my thoughts on various happenings in the realm of politics, economics, and history. Unorthodox and unfiltered.
                 </ContentItem>
-                </Link>
+                </Link> */}
               </div>
 
               <footer>
