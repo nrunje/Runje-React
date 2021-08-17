@@ -19,8 +19,9 @@ function About(props) {
             </Link>
             </div>
 
-            <div className="about-content-total-container">
-                <div className="about-content-container">
+        <div className="about-content-total-container">
+             <div className="about-content-container">
+               
                     <div className="about-content-upper">
                         <div className="about-content-upper-left">
                             <img src={NickRunje} />

@@ -9,6 +9,7 @@ import CornerBox from "../CornerBox";
 import Froggit from "../froggit.png";
 import HomePage from "../homepage.jpg";
 import SortingPic from "../sorting.jpg";
+import Header from "../components/Header";
 // ====================================
 
 // Temporary way to resolve images due to unknown error linking images in JSON file
@@ -18,7 +19,7 @@ export default class Projects extends React.Component {
     render() {
         return (
             <div className="projects-page">
-                <Nav />
+                <Header />
                 
                 <CornerBox title="Personal CS Projects">
                     <ul>

@@ -24,16 +24,6 @@ body {
   width: 100vw;
 }
 
-.site-title {
-  color: white;
-  display: flex;
-  height: var(--title-height);
-  justify-content: flex-start;
-  align-items: center;
-  margin-left: 10px;
-  cursor: pointer;
-}
-
 .site-landing-bottom {
   /* background: aqua; */
   max-width: 1800px;
