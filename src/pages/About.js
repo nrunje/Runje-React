@@ -1,12 +1,12 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import "./About.css";
-import { AboutContent } from "./AboutContent";
+import { AboutContent } from "../components/AboutContent";
 import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
 import ArrowBackIcon from '@material-ui/icons/ArrowBack';
-import AboutData from "./about.json";
-import NickRunje from "./images/nick-runje.jpg";
-import Header from "./components/Header";
+import AboutData from "../about.json";
+import NickRunje from "../images/nick-runje.jpg";
+import Header from "../components/Header";
 
 function About(props) {
     const [date] = useState(new Date());
