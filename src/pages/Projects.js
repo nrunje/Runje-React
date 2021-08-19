@@ -1,13 +1,13 @@
 import React from "react";
 import "./Projects.css";
-import { ProjectCard } from "../ProjectCard";
+import { ProjectCard } from "../components/ProjectCard";
 import ProjectsData from "../projects.json";
 import CornerBox from "../components/CornerBox";
 
 // Temporary images until JSON relative image paths can be fixed
-import Froggit from "../froggit.png";
-import HomePage from "../homepage.jpg";
-import SortingPic from "../sorting.jpg";
+import Froggit from "../images/froggit.png";
+import HomePage from "../images/homepage.jpg";
+import SortingPic from "../images/sorting.jpg";
 import Header from "../components/Header";
 // ====================================
 
