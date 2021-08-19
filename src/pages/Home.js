@@ -2,7 +2,7 @@ import React from "react";
 import './Home.css';
 import { Link } from "react-router-dom";
 import ContentItem from "../components/ContentItem";
-import Computer from "../computer.jpg";
+import Computer from "../images/computer.jpg";
 import NickRunje from "../images/nick-runje.jpg";
 import Header from "../components/Header";
 
