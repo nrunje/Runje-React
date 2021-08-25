@@ -17,7 +17,7 @@
         "id": "2",
         "title": "Froggit",
         "imageURL": "./computer.jpg",
-        "description": "Written in Python, this assignment, a recreation of the famous 1980's hit and marks the final project of CS 2110 at Cornell University. This game makes extensive use of Object-Oriented Programming (OOP) principles and JSON file format.",
+        "description": "Written in Python, this assignment, a recreation of the famous 1980's hit and marks the final project of CS 1110 at Cornell University. This game makes extensive use of Object-Oriented Programming (OOP) principles and JSON file format.",
         "link": "https://github.com/nrunje/Froggit"
     }
 ]
