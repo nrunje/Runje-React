@@ -5,7 +5,7 @@ import "./Header.css";
 
 export default function Header() {
     return (
-        <section className="site-title">
+        <section className="site-title" style={{cursor: "default"}}>
             <Link to="/" style={{ color: "white"}}>
             <h1 sytle="color: white;" >Runje.org</h1>
             </Link>

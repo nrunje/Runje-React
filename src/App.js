@@ -13,12 +13,16 @@ import Resume from "./pages/Resume";
       <Router>
         <Switch>
           <Route path="/projects" exact component={Projects} />
+
           <Route path="/about" exact component={About} />
-          <Route path="/resume">
+
+          <Route path="/resume" exact>
             <Resume />
           </Route>
+
           <Route path="/" exact component={Home} />
-          <Route path="/" component={Error404} />
+
+          <Route path="*" component={Error404} />
         </Switch>
       </Router>
     );
