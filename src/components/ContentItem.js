@@ -4,7 +4,7 @@ import "./ContentItem.css";
 function ContentItem(props) {
     return (
         <div className="content-item">
-            <img src={props.image} />
+            <img src={props.image} alt={props.alt} />
 
             <div className="content-item-text-container">
                 <div className="content-item-text-content">

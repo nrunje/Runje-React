@@ -23,13 +23,13 @@ export default class App extends React.Component {
             <div className="site-landing-bottom">
               <div className="site-items-container">
                 <Link style={{ textDecoration: 'none' }} to="/projects">
-                <ContentItem title="CS Projects" image={Computer}>
+                <ContentItem title="CS Projects" image={Computer} alt="Image of computer">
                   A snippet of my various coding projects and assignments using different types of programming langagues and CS technologies.
                 </ContentItem>
                 </Link>
                 
                 <Link style={{ textDecoration: 'none' }} to="/about">
-                <ContentItem title="About Me" image={NickRunje}>
+                <ContentItem title="About Me" image={NickRunje} alt="Image of Nicholas Runje / Nick Runje">
                   Here is a brief overview of my technical skills in CS (and elsewhere), academic credentials, and personal background/goals.
                 </ContentItem>
                 </Link>
