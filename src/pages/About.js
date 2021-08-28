@@ -21,7 +21,7 @@ function About(props) {
                 
                         <div className="about-content-upper">
                             <div className="about-content-upper-left">
-                                <img src={NickRunje} />
+                                <img src={NickRunje} alt="Image of Nicholas Runje / Nick Runje"/>
                             </div>
 
                         <div className="about-content-upper-right">

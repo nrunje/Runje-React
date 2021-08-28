@@ -25,7 +25,7 @@ export default class Projects extends React.Component {
                     {ProjectsData.map(project => (
                         <li>
                         <a href={project.link}>
-                        <ProjectCard key={project.id} title={project.title} image={images[parseInt(project.id)]}>
+                        <ProjectCard key={project.id} title={project.title} image={images[parseInt(project.id)]} alt={project.alt}>
                             {project.description}
                         </ProjectCard>
                         </a>

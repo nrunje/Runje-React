@@ -3,6 +3,7 @@
         "id": "0",
         "title": "Sorting Algos Visualizer",
         "imageURL": "./computer.jpg",
+        "alt": "Image of a sorting algorithms visualizer",
         "description": "A desktop & mobile-compatible vanilla JavaScript (ES6), HTML, and CSS site visualizing various sorting algorithms including insertion sort, selection sort, Quicksort, Merge sort, and Stalinsort -- a humorous O(n) algo",
         "link": "https://sorting.runje.org"
     },
@@ -10,6 +11,7 @@
         "id": "1",
         "title": "Runje.org",
         "imageURL": "./fountain-pen.jpg",
+        "alt": "Image of Runje.org",
         "description": "The Git repository for this very website built in React.JS, which includes front-end stage management, automatic generation of JSON-formatted, user-inputted content information, resuable components, and managing of client-side routing with React Router",
         "link": "https://github.com/nrunje/Runje-React"
     },
@@ -17,6 +19,7 @@
         "id": "2",
         "title": "Froggit",
         "imageURL": "./computer.jpg",
+        "alt": "Image of Froggit game",
         "description": "Written in Python, this assignment, a recreation of the famous 1980's hit and marks the final project of CS 1110 at Cornell University. This game makes extensive use of Object-Oriented Programming (OOP) principles and JSON file format.",
         "link": "https://github.com/nrunje/Froggit"
     }
