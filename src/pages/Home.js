@@ -24,7 +24,7 @@ export default class App extends React.Component {
               <div className="site-items-container">
                 <Link style={{ textDecoration: 'none' }} to="/projects">
                 <ContentItem title="CS Projects" image={Computer} alt="Image of computer">
-                  A snippet of my various coding projects and assignments using different types of programming langagues and CS technologies.
+                  A snippet of my various coding projects and assignments using different types of programming languages and CS technologies.
                 </ContentItem>
                 </Link>
                 
