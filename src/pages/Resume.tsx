@@ -18,7 +18,7 @@ export default function Resume() {
     );
 }
 
-const resumeWrapper = {
+const resumeWrapper : React.CSSProperties = {
     color: "white",
     width: "100%",
     height: "calc(100vh - 50px)",
