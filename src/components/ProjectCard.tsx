@@ -1,7 +1,7 @@
 import React from "react";
 import "./ProjectCard.css";
 
-export function ProjectCard(props) {
+export function ProjectCard(props: any) {
     return (
         <div className="project-card">
             <div className="project-card-image-container">

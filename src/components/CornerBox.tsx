@@ -1,7 +1,7 @@
 import React from "react";
 import "./CornerBox.css";
 
-function CornerBox(props) {
+function CornerBox(props: any) {
     return (
         <div className="corner-box">
             <section className="corner-box-title">
@@ -13,6 +13,6 @@ function CornerBox(props) {
             </section>
         </div>
     );
-} 
+}
 
 export default CornerBox;
