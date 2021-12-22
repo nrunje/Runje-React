@@ -6,6 +6,7 @@ import Computer from "../images/computer.jpg";
 import NickRunje from "../images/nick-runje.jpg";
 import Header from "../components/Header";
 
+
 export default class App extends React.Component {
   constructor(props) {
     super(props);
@@ -16,37 +17,37 @@ export default class App extends React.Component {
   }
 
   render() {
-      return (
-        <div className="site-landing">
-          <Header />
+    return (
+      <div className="site-landing">
+        <Header />
 
-            <div className="site-landing-bottom">
-              <div className="site-items-container">
-                <Link style={{ textDecoration: 'none' }} to="/projects">
-                <ContentItem title="CS Projects" image={Computer} alt="Image of computer">
-                  A snippet of my various coding projects and assignments using different types of programming languages and CS technologies.
-                </ContentItem>
-                </Link>
-                
-                <Link style={{ textDecoration: 'none' }} to="/about">
-                <ContentItem title="About Me" image={NickRunje} alt="Image of Nicholas Runje / Nick Runje">
-                  Here is a brief overview of my technical skills in CS (and elsewhere), academic credentials, and personal background/goals.
-                </ContentItem>
-                </Link>
+        <div className="site-landing-bottom">
+          <div className="site-items-container">
+            <Link style={{ textDecoration: 'none' }} to="/projects">
+              <ContentItem title="CS Projects" image={Computer} alt="Image of computer">
+                A snippet of my various coding projects and assignments using different types of programming languages and CS technologies.
+              </ContentItem>
+            </Link>
 
-                {/* ===== Below is writing section ====== */}
-                {/* <Link style={{ textDecoration: 'none' }} to="/writing">
+            <Link style={{ textDecoration: 'none' }} to="/about">
+              <ContentItem title="About Me" image={NickRunje} alt="Image of Nicholas Runje / Nick Runje">
+                Here is a brief overview of my technical skills in CS (and elsewhere), academic credentials, and personal background/goals.
+              </ContentItem>
+            </Link>
+
+            {/* ===== Below is writing section ====== */}
+            {/* <Link style={{ textDecoration: 'none' }} to="/writing">
                 <ContentItem title="Essays and Writings" image={FountainPen}>
                   Where I gather my thoughts on various happenings in the realm of politics, economics, and history. Unorthodox and unfiltered.
                 </ContentItem>
                 </Link> */}
-              </div>
+          </div>
 
-              <footer>
-                Designed in {this.state.date.getUTCFullYear()} with React.
-              </footer>
-            </div>
+          <footer>
+            Designed in {this.state.date.getUTCFullYear()} with React.
+          </footer>
         </div>
-      );
-    }
+      </div>
+    );
   }
+}
