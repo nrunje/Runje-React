@@ -6,21 +6,14 @@ import Computer from "../images/computer.jpg";
 import NickRunje from "../images/nick-runje.jpg";
 import Header from "../components/Header";
 
-type MyState = {
-  date: Date
-}
-
-function getYear() {
-  return new Date().getUTCFullYear;
-}
 
 export default class App extends React.Component {
-  constructor(props: any) {
+  constructor(props) {
     super(props);
 
-    // this.state = {
-    //   date: new Date()
-    // }
+    this.state = {
+      date: new Date()
+    }
   }
 
   render() {
@@ -51,7 +44,7 @@ export default class App extends React.Component {
           </div>
 
           <footer>
-            Designed in {getYear} with React.
+            Designed in {this.state.date.getUTCFullYear()} with React.
           </footer>
         </div>
       </div>
