@@ -14,26 +14,24 @@ import Header from "../components/Header";
 // Temporary way to resolve images due to unknown error linking images in JSON file
 const images: string[] = [SortingPic, HomePage, Froggit]
 
-export default class Projects extends React.Component {
-    render() {
-        return (
-            <div className="projects-page">
-                <Header />
+export default function Projects() {
+    return (
+        <div className="projects-page">
+            <Header />
 
-                <CornerBox title="Personal CS Projects">
-                    <ul>
-                        {ProjectsData.map(project => (
-                            <li>
-                                <a href={project.link}>
-                                    <ProjectCard key={project.id} title={project.title} image={images[parseInt(project.id)]} alt={project.alt}>
-                                        {project.description}
-                                    </ProjectCard>
-                                </a>
-                            </li>
-                        ))}
-                    </ul>
-                </CornerBox>
-            </div>
-        );
-    }
+            <CornerBox title="Personal CS Projects">
+                <ul>
+                    {ProjectsData.map(project => (
+                        <li key={project.id}>
+                            <a href={project.link}>
+                                <ProjectCard title={project.title} image={images[parseInt(project.id)]} alt={project.alt}>
+                                    {project.description}
+                                </ProjectCard>
+                            </a>
+                        </li>
+                    ))}
+                </ul>
+            </CornerBox>
+        </div>
+    );
 }

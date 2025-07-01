@@ -1,9 +1,8 @@
 import React, { useState } from "react";
-import { Link } from "react-router-dom";
 import "./About.css";
 import { AboutContent } from "../components/AboutContent";
-import ArrowForwardIcon from '@material-ui/icons/ArrowForward';
-import ArrowBackIcon from '@material-ui/icons/ArrowBack';
+import ArrowForwardIcon from '@mui/icons-material/ArrowForward';
+import ArrowBackIcon from '@mui/icons-material/ArrowBack';
 import AboutData from "../about.json";
 import NickRunje from "../images/nick-runje.jpg";
 import Header from "../components/Header";
@@ -21,7 +20,7 @@ function About(props: any) {
 
                     <div className="about-content-upper">
                         <div className="about-content-upper-left">
-                            <img src={NickRunje} alt="Image of Nicholas Runje / Nick Runje" />
+                            <img src={NickRunje} alt="Nicholas Runje" />
                         </div>
 
                         <div className="about-content-upper-right">

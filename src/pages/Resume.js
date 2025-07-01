@@ -10,8 +10,8 @@ export default function Resume() {
             <div className="resume-content-wrapper" style={resumeWrapper}>
                 <h1 style={{ textAlign: "center", fontSize: "42px" }}>Click below for my resume:</h1>
 
-                <Link to="/">
-                    <button style={{ padding: "10px 15px", marginTop: "25px" }} >Download</button>
+                <Link to="/" style={{ padding: "10px 15px", marginTop: "25px" }} >
+                    <button>Download</button>
                 </Link>
             </div>
         </section>
